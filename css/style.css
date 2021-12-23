@@ -1,0 +1,366 @@
+/* **********global css**************** */
+:root {
+  --color: #16a085;
+}
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1140px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.head ul li a {
+  position: relative;
+}
+ul li {
+  list-style: none;
+}
+.head ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color);
+}
+.head ul li a:hover::before {
+  width: 100%;
+  transition: all 0.4s linear;
+}
+
+/* ******************header css********* */
+header {
+  width: 100%;
+  padding: 20px 0px;
+  position: absolute;
+}
+.head {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head ul li {
+  display: inline-block;
+  margin-right: 60px;
+}
+.head ul li i {
+  margin: 0px 40px;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: var(--color);
+}
+.head ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+/* *************banner css************ */
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/banner1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-top {
+  text-align: center;
+}
+.banner-top h2 {
+  margin-top: 250px;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-top p {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  line-height: 50px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.banner-top button {
+  width: 145px;
+  height: 37px;
+  margin-top: 10px;
+  background-color: var(--color);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.banner-top button a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+.banner-bottom {
+  width: 1005;
+}
+.banner-bottom a i {
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: turquoise;
+}
+/* *-section 1 css *********/
+.sec1 {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f5f2f2;
+}
+.sec1-con {
+  display: flex;
+  height: 60vh;
+}
+.sec1-left,
+.sec1-right {
+  flex-basis: 50%;
+}
+.sec1-left {
+  text-align: left;
+}
+.sec1-right img {
+  width: 370px;
+}
+.sec1-left h3 {
+  color: var(--color);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.sec1-left P {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.sec1-left button {
+  width: 145px;
+  height: 37px;
+
+  background-color: var(--color);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.sec1-left button a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+/* *-section 2 css *********/
+.sec2 {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f5f2f2;
+}
+.sec2-con {
+  display: flex;
+  height: 60vh;
+}
+.sec2-left,
+.sec2-right {
+  flex-basis: 50%;
+}
+.sec2-right {
+  text-align: left;
+}
+.sec2-left img {
+  width: 270px;
+}
+.sec2-right h3 {
+  color: var(--color);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.sec2-right P {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.sec2-right button {
+  width: 145px;
+  height: 37px;
+
+  background-color: var(--color);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.sec2-right button a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+/* ***********section 3 css *** */
+.sec3 {
+  width: 100%;
+  background-color: #f5f6f7;
+  height: 45vh;
+  margin-top: -30px;
+  padding-top: 70px;
+}
+.sec3-con {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sec3-con h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.sec3-con p {
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+/* ********section4 css******* */
+.sec4 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: row;
+}
+.sec4-con {
+  text-align: center;
+}
+.sec4-con h3 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.sec4-con input {
+  padding: 10px 52px;
+}
+.sec4-con input::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sec4-con a {
+  position: relative;
+  top: 6px;
+}
+.fa-check {
+  background-color: var(--color);
+  color: white;
+  margin-left: -4px;
+}
+/* *****************section5 css***** */
+.sec5 {
+  width: 100%;
+  height: 40vh;
+
+  background-color: #f5f6f7;
+}
+
+.sec5-con {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sec5-con h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 55px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: rgba(10, 10, 10, 0.719);
+  margin-bottom: 30px;
+}
+.sec5-con P {
+  text-align: center;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.boll2 {
+  display: flex;
+  margin-top: 80px;
+}
+.boll2 h3 {
+  display: inline-block;
+  margin: 0px 55px;
+}
+.boll2 .rool {
+  background-color: var(--color);
+  padding: 15px 1px;
+  color: white;
+}
+.rool a {
+  color: white;
+
+  background-color: #055c4a;
+  padding: 15px 10px;
+}
+footer {
+  width: 100%;
+  height: 12vh;
+}
+.foot-con {
+  display: flex;
+  margin-top: 30px;
+}
+.foot-left span {
+  font-size: 18px;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  border-right: 1px solid #055c4a;
+  padding: 0px 10px;
+}
+.foot-left h3 {
+  margin-top: 25px;
+  font-size: 20px;
+}
+.foot-left h3 .s1 {
+  border-right: none;
+  margin-top: 25px;
+  font-size: 25px;
+  color: var(--color);
+}
